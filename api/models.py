@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Country(models.Model):
 
     Country_id = models.AutoField(primary_key=True)
@@ -8,7 +7,7 @@ class Country(models.Model):
     country_code = models.CharField(max_length=3)
     description = models.TextField(max_length=50)
     logo_url = models.URLField()
-    status = models.BooleanField(default=True)
+    status = models.BooleanField()
 
 
 
